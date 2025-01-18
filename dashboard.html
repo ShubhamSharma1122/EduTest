@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            nav ul {
+                display: block;
+                text-align: center;
+            }
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome Dear Student </h1>
+        <nav>
+            <ul>
+                <li><a href="mainhomepage.jsp">Home</a></li>
+                <li><a href="threeExam.jsp">Exam</a></li>
+                <li><a href="Exam.jsp">Results</a></li>
+                <li><a href="library.jsp">Library</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Upcoming Exams:</h2>
+            <ul>
+                <li>Exam 1 (May 1st)</li>
+                <li>Exam 2 (May 5th)</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Your Recent Results:</h2>
+            <ul>
+                <li>Exam 1: Scored 85%</li>
+                <li>Exam 2: Scored 92%</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Library:</h2>
+            <form action="search.jsp" method="GET">
+                <input type="text" name="query" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+            <ul>
+                <li>Study Materials</li>
+                <li>Reference Books</li>
+                <li>Past Exam Papers</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Online Exam System</p>
+    </footer>
+</body>
+</html>

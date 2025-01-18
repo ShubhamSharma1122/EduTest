@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('home.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .quote {
+            font-size: 18px;
+            font-style: italic;
+            color: #ddd; /* Lighter text color for the quote */
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        button.student {
+            background-color: #007bff;
+            color: #fff;
+        }
+        button.admin {
+            background-color: #28a745;
+            color: #fff;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        button.admin:hover {
+            background-color: #218838;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Online Examination System</h1>
+        <h1>ऑनलाइन परीक्षा प्रणाली</h1>
+        <p class="quote">"भीतर क्यों भरी उदासी है, ये भरी नदी क्यों प्यासी है। हर बार दिशा सुलझाएगा, यह जीवन गंगा काशी है -शिवम द्विवेदी</p>
+        <p class="quote">"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful." - Er.Shivam Dwivedi</p>
+        <div class="button-container">
+            <button class="student" onclick="window.location.href='mainhomepage.jsp?type=student'">Student Services</button>
+            <button class="admin" onclick="window.location.href='firsthomepage.jsp?type=admin'">Administrator Services</button>
+        </div>
+    </div>
+</body>
+</html>
